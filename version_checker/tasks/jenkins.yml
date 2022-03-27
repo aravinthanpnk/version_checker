@@ -1,0 +1,12 @@
+---
+- debug:
+    msg: "Hello! I'm here from Jenkins!"
+
+# - name: Print the package facts
+#   ansible.builtin.debug:
+#     var: ansible_facts.packages
+
+- name: Check whether a package called curl is installed
+  ansible.builtin.debug:
+    msg: "{{ ansible_facts.packages['curl'][0].version}} version of curl are installed!"
+  when: "'curl' in ansible_facts.packages"

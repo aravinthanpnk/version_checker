@@ -1,0 +1,19 @@
+---
+# vars file for version_checker
+metaList: [{
+    "name" : "Jenkins",
+    "latestVersion": "2.337",
+    "versions": [
+    "2.337",
+    ​"2.336",
+    ​"2.335",
+    ​"2.334",
+    ​"2.333",
+    ​"2.332",
+    ​"2.331",
+    ​"2.330"
+    ],
+    "homePage": "https://www.jenkins.io",
+    "changeLogPage": "https://www.jenkins.io/changelog/",
+    "taskName": "jenkins"
+    }]

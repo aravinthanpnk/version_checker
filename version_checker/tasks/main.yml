@@ -1,0 +1,12 @@
+---
+# tasks file for version_checker
+- debug:
+    msg: "Hello! I'm here!"
+
+- name: Gather the package facts
+  ansible.builtin.package_facts:
+    manager: auto
+
+- name: Version Checker
+  include_tasks: "{{item.taskName}}.yml"
+  with_items: "{{metaList}}"
